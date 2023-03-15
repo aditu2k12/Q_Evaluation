@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  mlapp:
+    container_name: mlapp
+    image: adi2812/paraphrase-check-docker
+    ports:
+      - "4000:4000"
+    build:
+      context: .
+      dockerfile: Dockerfile
